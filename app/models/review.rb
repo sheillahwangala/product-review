@@ -10,7 +10,7 @@ class Review < ActiveRecord::Base
         Product.find(self.product_id)
     end
 
-    def print_all_reviews
+    def print_all_review
         puts "Review for #{self.product.name} by #{self.user.name}: #{self.star_rating} . #{self.comment}"
     end
 end
