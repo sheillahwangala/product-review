@@ -23,4 +23,11 @@ puts "Creating reviews..."
 # *****************************************************************
 # Create Reviews Here
 
+puts "Creating reviews..."
+review1 =Review.create(comment: "Good services", star_rating: 3, user_id: user1.id, product_id: product1.id)
+review2 =Review.create(comment: "Quality product", star_rating: 5, user_id: user2.id, product_id: product2.id)
+review3 =Review.create(comment: "Excellent product", star_rating: 5, user_id: user1.id, product_id: product3.id)
+review4 =Review.create(comment: "Quality services", star_rating: 4, user_id: user4.id, product_id: product4.id)
+review5 =Review.create(comment: "Good product!", star_rating: 3, user_id: user5.id, product_id: product2.id)
+
 puts "Seeding done!"
